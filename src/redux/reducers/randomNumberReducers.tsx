@@ -1,26 +1,27 @@
 import { ActionTypeNumber } from '../actions/randomNumberActions';
-import { RANDOM_NUMBER } from '../types/types';
+import { RANDOM_NUMBER, } from '../types/types';
+
 
 export interface NumRamState {
-  numRamdom: any;
+    numRamdom: any;
 }
 
 const initialState = {
-  numRamdom: {
-    rand1: '',
-    rand2: '',
-    rand3: '',
-  },
+    numRamdom: {
+        rand1: 'WIN',
+        rand2: 'IT',
+        rand3: 'NOW',
+    },
 };
 export default function randomNumberReducers(
-  state: NumRamState = initialState,
-  action: ActionTypeNumber,
+    state: NumRamState = initialState,
+    action: ActionTypeNumber
 ): NumRamState {
-  switch (action.type) {
-    case RANDOM_NUMBER:
-      return { ...state, numRamdom: action.payload };
+    switch (action.type) {
+        case RANDOM_NUMBER:
+            return { ...state, numRamdom: action.payload };
 
-    default:
-      return state;
-  }
+        default:
+            return state;
+    }
 }

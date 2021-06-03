@@ -3,9 +3,10 @@ import styled from 'styled-components';
 export const WrapperContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
   height: 100%;
+  font-size: 80px;
 `;
 
 export const BoxWrapper = styled.div`
@@ -17,6 +18,7 @@ export const BoxWrapper = styled.div`
   width: 200px;
   height: 200px;
   border-radius: 15px;
+  margin: 20px;
 `;
 
 export const Wrapper = styled.div`
@@ -25,4 +27,9 @@ export const Wrapper = styled.div`
   flex-direction: column;
   width: 100%;
   height: 100%;
+`;
+
+export const WinWrapper = styled.div`
+    font-size: 100px;
+    margin: 50px;
 `;
